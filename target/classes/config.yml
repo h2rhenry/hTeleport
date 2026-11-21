@@ -1,0 +1,161 @@
+#               CẤU HÌNH CHÍNH | HTELEPORT
+
+# Đừng chạm vào nó nếu bạn không biết mình đang làm gì.
+config-version: 1.0
+
+spawn:
+  delay: 3
+  cooldown: 10
+  countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+  teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+  cancel-on-move: true
+  cancel-on-damage: true
+
+warp:
+  delay: 3
+  cooldown: 10
+  countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+  teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+  cancel-on-move: true
+  cancel-on-damage: true
+
+back:
+  delay: 3
+  cooldown: 15
+  countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+  teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+  cancel-on-move: true
+  cancel-on-damage: true
+
+tpa:
+  delay: 3
+  cooldown: 10
+  request-expiry: 60
+  countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+  teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+  cancel-on-move: true
+  cancel-on-damage: true
+
+tphere:
+  delay: 3
+  cooldown: 10
+  request-expiry: 60
+  countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+  teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+  cancel-on-move: true
+  cancel-on-damage: true
+
+tpall:
+  delay: 5
+  cooldown: 30
+  countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+  teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+  cancel-on-move: false
+  cancel-on-damage: true
+
+home:
+  delay: 3
+  cooldown: 5
+
+  # Số Home TỐI ĐA tuyệt đối mà một người chơi có thể sở hữu (áp dụng cho tất cả, kể cả admin).
+  # Đây là "trần" của mọi mức giới hạn bên dưới: giá trị nào lớn hơn sẽ bị cắt về đúng số này.
+  # Lệnh /sethome, /delhome và các thông báo sẽ tự cập nhật theo số này.
+  # Lưu ý: menu GUI chỉ hiển thị tối đa số Home bằng số ô khai báo trong "home-slots" của gui.yml
+  # (các Home vượt quá vẫn dùng được bằng lệnh). Cần thêm ô? Hãy thêm slot vào gui.yml (tối đa 6 hàng).
+  max-homes: 21
+
+  # Số Home mặc định cho người chơi KHÔNG có permission nào ở bên dưới.
+  default-limit: 1
+
+  # Phân bổ số Home theo permission. Mỗi nhóm gồm:
+  #   permission: tên permission cấp cho người chơi (ví dụ qua LuckPerms)
+  #   limit:      số Home người có permission đó được phép đặt
+  # - Người chơi có nhiều nhóm cùng lúc sẽ lấy mức CAO NHẤT (không cộng dồn).
+  # - Tên nhóm (vip, vip-plus...) tự đặt tuỳ ý, không dùng dấu chấm.
+  # - Không vượt quá "max-homes". Người có "hTeleport.admin" luôn được đúng "max-homes".
+  # - Vẫn hỗ trợ kiểu cũ hTeleport.home.<số> (ví dụ hTeleport.home.5 = 5 Home) mà không cần khai báo ở đây.
+  # Sau khi sửa, dùng /htlp reload để áp dụng.
+  permission-limits:
+    vip:
+      permission: "hTeleport.home.vip"
+      limit: 5
+    vip-plus:
+      permission: "hTeleport.home.vip-plus"
+      limit: 8
+    mvp:
+      permission: "hTeleport.home.mvp"
+      limit: 12
+
+  countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+  teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+  cancel-on-move: true
+  cancel-on-damage: true
+
+rtp:
+  delay: 3
+  cooldown: 300
+  cancel-on-move: true
+  cancel-on-damage: true
+  countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+  # Đã tắt (để trống) vì âm thanh lúc TP thành công giờ được cấu hình đầy đủ hơn
+  # ở mục "success-effect" bên dưới (có cả volume/pitch), tránh bị phát trùng 2 âm thanh.
+  teleport-sound: ""
+  max-attempts: 20 # Số lần tối đa thử tìm vị trí an toàn trước khi bỏ cuộc
+
+  # Danh sách các loại block bị coi là KHÔNG AN TOÀN để đứng lên khi RTP.
+  # Nếu block nền tại vị trí random trúng phải 1 trong các loại dưới đây,
+  # plugin sẽ tự động thử lại vị trí khác (tối đa max-attempts lần).
+  # Dùng đúng tên Material của Bukkit/Paper (viết HOA), xem đầy đủ tại:
+  # https://jd.papermc.io/paper/1.21/org/bukkit/Material.html
+  # Ghi sai tên block sẽ bị bỏ qua và server sẽ cảnh báo ở console khi khởi động/reload.
+  blacklist-blocks:
+    - LAVA
+    - WATER
+    - MAGMA_BLOCK
+    - CACTUS
+    - CAMPFIRE
+    - SOUL_CAMPFIRE
+    - FIRE
+    - SOUL_FIRE
+    - VOID_AIR
+    - BEDROCK        # Chặn để tránh bị kẹt trên trần bedrock khi RTP ở Nether
+    - WITHER_ROSE
+    - POWDER_SNOW
+
+  # Hiệu ứng (âm thanh + hạt) phát tại vị trí người chơi ngay khi RTP thành công.
+  # Đặt "enabled: false" nếu không muốn dùng hiệu ứng này.
+  success-effect:
+    enabled: true
+    sound: "ENTITY_ENDERMAN_TELEPORT"   # Tên Sound của Bukkit/Paper, để trống hoặc "none" nếu không muốn có âm thanh
+    volume: 1.0
+    pitch: 1.0
+    particle: "PORTAL"                  # Tên Particle của Bukkit/Paper, để trống hoặc "none" nếu không muốn có hạt hiệu ứng
+    particle-count: 60                  # Số lượng hạt hiển thị
+    particle-offset-x: 0.5              # Độ tỏa rộng của hạt theo từng trục (giá trị càng lớn càng tỏa xa vị trí TP)
+    particle-offset-y: 1.0
+    particle-offset-z: 0.5
+    particle-speed: 0.05                # Tốc độ/độ "rung" của hạt
+    # Xem danh sách Sound: https://jd.papermc.io/paper/1.21/org/bukkit/Sound.html
+    # Xem danh sách Particle: https://jd.papermc.io/paper/1.21/org/bukkit/Particle.html
+
+  # Cấu hình các thế giới cho phép RTP
+  worlds:
+    world: # Tên thế giới
+      min-radius: 100
+      max-radius: 5000
+      center-x: 0
+      center-z: 0
+    world_nether:
+      min-radius: 100
+      max-radius: 2000
+      center-x: 0
+      center-z: 0
+      # (Tùy chọn) Giới hạn độ cao bắt đầu quét, giúp bỏ qua trần bedrock của Nether
+      # (thường nằm khoảng Y 123-127) để tìm vị trí nhanh hơn. Không bắt buộc phải có
+      # dòng này - nếu bỏ, plugin vẫn tự quét xuyên qua trần để tìm hang/khoảng trống an toàn.
+      max-y: 120
+    world_the_end:
+      min-radius: 100
+      max-radius: 2000
+      center-x: 0
+      center-z: 0

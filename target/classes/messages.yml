@@ -1,0 +1,86 @@
+#               CẤU HÌNH TIN NHẮN | HTELEPORT
+# Chỉ sử dụng màu sắc dạng "&", kiểu MiniMessages chưa được hỗ trợ
+
+# Đừng chạm vào nó nếu bạn không biết mình đang làm gì.
+config-version: 1.0
+
+prefix: "&8[&b&lʜᴛᴇʟᴇᴘᴏʀᴛ&8] &r"
+
+reload-success: "&a&l✓ &fĐã ᴛảɪ ʟạɪ ᴛʜàɴʜ ᴄôɴɢ ᴛấᴛ ᴄả ᴄấᴜ ʜìɴʜ ᴄủᴀ &bʜᴛᴇʟᴇᴘᴏʀᴛ&f!"
+no-permission: "&c&l✗ &fʙạɴ ᴋʜôɴɢ ᴄó ǫᴜʏềɴ ᴋíᴄʜ ʜᴏạᴛ ʟệɴʜ ɴàʏ."
+player-only: "&c&l✗ &fᴄʜỉ ɴɢườɪ ᴄʜơɪ ᴍớɪ ᴄó ᴛʜể ꜱử ᴅụɴɢ ʟệɴʜ ɴàʏ."
+player-not-found: "&c&l✗ &fɴɢườɪ ᴄʜơɪ '&b%player%&f' ᴋʜôɴɢ ᴛồɴ ᴛạɪ ʜᴏặᴄ ƌã ɴɢᴏạɪ ᴛᴜʏếɴ."
+cooldown: "&c&l⌛ &fᴠᴜɪ ʟòɴɢ ᴄʜờ &b%cooldown% &fɢɪâʏ ᴛʀướᴄ ᴋʜɪ ᴛɪếᴘ ᴛụᴄ ꜱử ᴅụɴɢ."
+teleport-cancelled-move: "&c&l✕ &fᴅịᴄʜ ᴄʜᴜʏểɴ ʙị ʜủʏ ᴅᴏ ʙạɴ ƌã ᴅɪ ᴄʜᴜʏểɴ!"
+teleport-cancelled-damage: "&c&l✕ &fᴅịᴄʜ ᴄʜᴜʏểɴ ʙị ʜủʏ ᴅᴏ ʙạɴ ʙị ɴʜậɴ ꜱáᴛ ᴛʜươɴɢ!"
+actionbar-countdown: "&b&l✦ &fᴅịᴄʜ ᴄʜᴜʏểɴ ᴛʀᴏɴɢ &b%delay% &fɢɪâʏ... &7(Đừɴɢ ᴅɪ ᴄʜᴜʏểɴ!)"
+teleport-success: "&b&l✦ &fᴅịᴄʜ ᴄʜᴜʏểɴ ᴛʜàɴʜ ᴄôɴɢ!"
+
+spawn-set: "&a&l✓ &fĐã đặᴛ đɪểᴍ &bꜱᴘᴀᴡɴ &fᴄʜᴜɴɢ ᴛʜàɴʜ ᴄôɴɢ!"
+spawn-not-set: "&c&l✗ &fᴄʜưᴀ ᴄó đɪểᴍ &bꜱᴘᴀᴡɴ &fɴàᴏ ƌượᴄ ᴛʜɪếᴛ ʟậᴘ."
+
+warp-created: "&a&l✓ &fƌã ᴛạᴏ &bᴡᴀʀᴘ '%warp%' &fᴛʜàɴʜ ᴄôɴɢ."
+warp-deleted: "&a&l✓ &fƌã xóᴀ &bᴡᴀʀᴘ '%warp%'&f."
+warp-not-found: "&c&l✗ &fƌɪểᴍ &bᴡᴀʀᴘ '%warp%' &fᴋʜôɴɢ ᴛồɴ ᴛạɪ."
+warp-perm-set: "&a&l✓ &fƌã ɢáɴ ǫᴜʏềɴ '&b%perm%&f' ᴄʜᴏ &bᴡᴀʀᴘ '%warp%'&f."
+warp-perm-removed: "&a&l✓ &fƌã gáɴ ʙỏ ǫᴜʏềɴ ᴋʜỏɪ &bᴡᴀʀᴘ '%warp%'&f."
+warp-no-perm: "&c&l✗ &fʙạɴ ᴋʜôɴɢ ᴄó ǫᴜʏềɴ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴛớɪ &bᴡᴀʀᴘ '%warp%'&f."
+warp-list-header: "&b&l✦ &f--- &b&lᴅᴀɴʜ ꜱáᴄʜ ᴡᴀʀᴘ &f---"
+warp-list-item: "&8  ⮌ &b%warp% &7%perm_hint%"
+warp-list-empty: "&c&l✗ &fʜɪệɴ ᴋʜôɴɢ ᴄó &bᴡᴀʀᴘ &fɴàᴏ."
+
+back-no-location: "&c&l✗ &fᴋʜôɴɢ ᴛìᴍ ᴛʜấʏ ᴛọᴀ ƌộ ᴄʜếᴛ ᴄủᴀ ʙạɴ."
+death-recorded: "&b&l☠ &fᴛọᴀ ƌộ ᴄʜếᴛ ƌã ƌượᴄ ʟưᴜ. ᴅùɴɢ &b/back &fƌể ǫᴜᴀʏ ʟạɪ."
+
+tpa-sent: "&b&l✉ &fƌã ɢửɪ ʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴛớɪ &b%player%&f. ɴʜấᴘ &b/tpcancel &fƌể ʜủʏ."
+tpa-received: "&b&l✉ &b%player% &fᴍᴜốɴ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴛớɪ ᴠị ᴛʀí ᴄủᴀ ʙạɴ."
+tphere-sent: "&b&l✉ &fƌã ɢửɪ ʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ &b%player% &fᴛớɪ."
+tphere-received: "&b&l✉ &b%player% &fᴍᴜốɴ ᴅịᴄʜ ᴄʜᴜʏểɴ ʙạɴ ᴛớɪ ᴠị ᴛʀí ᴄủᴀ ʜọ."
+tpa-accept-button: " &8[&a✓ &fᴄʜấᴘ ɴʜậɴ&8]"
+tpa-accept-hover: "&fɴʜấᴘ ƌể &bᴄʜấᴘ ɴʜậɴ &fʏêᴜ ᴄầᴜ"
+tpa-deny-button: " &8[&c✕ &fᴛừ ᴄʜốɪ%&8]"
+tpa-deny-hover: "&fɴʜấᴘ ƌể &cᴛừ ᴄʜốɪ &fʏêᴜ ᴄầᴜ"
+
+no-pending-request: "&c&l✗ &fʙạɴ ᴋʜôɴɢ ᴄó ʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ ɴàᴏ ƌᴀɴɢ ᴄʜờ."
+no-outgoing-request: "&c&l✗ &fʙạɴ ᴋʜôɴɢ ᴄó ʏêᴜ ᴄầᴜ ɴàᴏ ƌã ɢửɪ ƌể ʜᴜỷ."
+request-accepted-sender: "&a&l✓ &b%player% &fƌã ᴄʜấᴘ ɴʜậɴ ʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ."
+request-accepted-target: "&a&l✓ &fʙạɴ ƌã ᴄʜấᴘ ɴʜậɴ ʏêᴜ ᴄầᴜ ᴛừ &b%player%&f."
+request-denied-sender: "&c&l✗ &b%player% &fƌã ᴛừ ᴄʜốɪ ʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ."
+request-denied-target: "&c&l✗ &fʙạɴ ƌã ᴛừ ᴄʜốɪ ʏêᴜ ᴄầᴜ ᴛừ &b%player%&f."
+request-cancelled-sender: "&a&l✓ &fʙạɴ ƌã ʜᴜỷ ʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴛớɪ &b%player%&f."
+request-cancelled-target: "&c&l✕ &b%player% &fƌã ʜᴜỷ ʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ."
+request-expired-sender: "&c&l⌛ &fʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴛớɪ &b%player% &fƌã ʜếᴛ ʜạɴ."
+request-expired-target: "&c&l⌛ &fʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴛừ &b%player% &fƌã ʜếᴛ ʜạɴ."
+
+tpa-self: "&c&l✗ &fʙạɴ ᴋʜôɴɢ ᴛʜể ɢửɪ ʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴄʜᴏ ᴄʜíɴʜ ᴍìɴʜ."
+tpall-initiated: "&b&l✦ &fƌᴀɴɢ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴛấᴛ ᴄả ɴɢườɪ ᴄʜơɪ ᴛớɪ ᴠị ᴛʀí ᴄủᴀ ʙạɴ..."
+tpall-teleported: "&b&l✦ &fʙạɴ ƌᴀɴɢ ƌượᴄ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴛớɪ &b%player%&f."
+
+home-set-success: "&a&l✓ &fƌã ᴛʜɪếᴛ ʟậᴘ ᴛʜàɴʜ ᴄôɴɢ &bʜᴏᴍᴇ #%id%&f!"
+home-delete-success: "&a&l✓ &fƌã xóᴀ ᴛʜàɴʜ ᴄôɴɢ &bʜᴏᴍᴇ #%id%&f!"
+home-no-permission-slot: "&c&l✗ &fʙạɴ ᴋʜôɴɢ ᴄó ǫᴜʏềɴ ᴍở ʀộɴɢ ô &bʜᴏᴍᴇ #%id%&f."
+home-limit-reached: "&c&l✗ &fʙạɴ ƌã ƌạᴛ ɢɪớɪ ʜạɴ ꜱố ʟượɴɢ &bʜᴏᴍᴇ &fᴄʜᴏ ᴘʜéᴘ."
+home-invalid-id: "&c&l✗ &fɪᴅ &bʜᴏᴍᴇ &fᴘʜảɪ ʟà ᴍộᴛ ꜱố ᴛừ 1 ƌếɴ %max%!"
+home-usage-sethome: "&b&l💡 &fꜱử ᴅụɴɢ: &b/sethome <1-%max%>"
+home-usage-delhome: "&b&l💡 &fꜱử ᴅụɴɢ: &b/delhome <1-%max%>"
+home-not-found: "&c&l✗ &fʙạɴ ᴄʜưᴀ ƌặᴛ ᴠị ᴛʀí ᴄʜᴏ &bʜᴏᴍᴇ #%id%&f!"
+home-list-header: "&b&l✦ &f--- &b&lᴅᴀɴʜ ꜱáᴄʜ ʜᴏᴍᴇ &7(%count%/%max%) &f---"
+home-list-item: "&8  ⮌ &bʜᴏᴍᴇ #%id%: &f%world% &7(%x%, %y%, %z%)"
+home-list-empty: "&c&l✗ &fʙạɴ ᴄʜưᴀ ƌặᴛ ᴠị ᴛʀí &bʜᴏᴍᴇ &fɴàᴏ!"
+
+rtp-searching: "&aĐᴀɴɢ ᴛìᴍ ᴛọᴀ độ ᴀɴ ᴛᴏàɴ, ᴠᴜɪ ʟòɴɢ đợɪ&7..."
+rtp-not-found: "&cᴋʜôɴɢ ᴛʜể ᴛìᴍ ᴛʜấʏ ᴛọᴀ độ ᴀɴ ᴛᴏàɴ sᴀᴜ &e%attempts% &cʟầɴ ᴛʜử&7. ᴠᴜɪ ʟòɴɢ ᴛʜử ʟạɪ&7!"
+rtp-not-allowed-world: "&cʙạɴ ᴋʜôɴɢ ᴛʜể ᴅùɴɢ ʀᴛᴘ ở ᴛʜế ɢɪớɪ ɴàʏ&7!"
+rtp-world-not-found: "&c&l✗ &fᴛʜế ɢɪớɪ '&b%world%&f' ᴋʜôɴɢ ᴛồɴ ᴛạɪ."
+
+help-header: "       &8[ &b&lʜᴛᴇʟᴇᴘᴏʀᴛ ʜᴇʟᴘ &8]       "
+help-home: "&b/home [id|list] &8» &fᴍở ɢᴜɪ ʜᴏặᴄ ᴅịᴄʜ ᴄʜᴜʏểɴ ᴠề ʜᴏᴍᴇ"
+help-sethome: "&b/sethome <1-%max%> &8» &fƌặᴛ ᴠị ᴛʀí ʜᴏᴍᴇ"
+help-delhome: "&b/delhome <1-%max%> &8» &fxóᴀ ᴠị ᴛʀí ʜᴏᴍᴇ"
+help-spawn: "&b/spawn &8» &fᴅịᴄʜ ᴄʜᴜʏểɴ ᴠề ꜱᴘᴀᴡɴ"
+help-setspawn: "&b/setspawn &8» &fƌặᴛ ᴠị ᴛʀí ꜱᴘᴀᴡɴ"
+help-warp: "&b/warp <tên> &8» &fᴅịᴄʜ ᴄʜᴜʏểɴ ƌếɴ ƌɪểᴍ ᴡᴀʀᴘ"
+help-tpa: "&b/tpa <player> &8» &fɢửɪ ʏêᴜ ᴄầᴜ ᴅịᴄʜ ᴄʜᴜʏểɴ"
+help-back: "&b/back &8» &fᴛʀở ᴠề ᴠị ᴛʀí ᴠừᴀ ᴄʜếᴛ"
+help-reload: "&b/htlp reload &8» &fᴛảɪ ʟạɪ ᴄấᴜ ʜìɴʜ (ᴀᴅᴍɪɴ)"
+help-footer: "&7"
