@@ -1,0 +1,89 @@
+name: hTeleport
+version: '${project.version}'
+main: corelinks.henry.HTeleport
+api-version: '1.21'
+author: h2rhenry
+website: https://h2rhenry.github.io/
+description: Hệ thống quản lí dịch chuyển tất cả trong một.
+folia-supported: true
+
+permissions:
+  hTeleport.admin:
+    description: Cho phép sử dụng toàn bộ tính năng Admin và reload plugin (/htlp reload)
+    default: op
+  hTeleport.back:
+    description: Cho phép sử dụng lệnh /back
+    default: true
+  hTeleport.tpa:
+    description: Cho phép gửi yêu cầu dịch chuyển (/tpa)
+    default: true
+  hTeleport.tphere:
+    description: Cho phép yêu cầu người khác dịch chuyển đến mình (/tphere)
+    default: true
+  hTeleport.tpall:
+    description: Cho phép dịch chuyển tất cả người chơi đến bản thân (/tpall)
+    default: op
+  hTeleport.tpaccept:
+    description: Cho phép chấp nhận yêu cầu dịch chuyển (/tpaccept)
+    default: true
+  hTeleport.tpdeny:
+    description: Cho phép từ chối yêu cầu dịch chuyển (/tpdeny)
+    default: true
+  hTeleport.tpcancel:
+    description: Cho phép hủy yêu cầu dịch chuyển đã gửi (/tpcancel)
+    default: true
+  hTeleport.home.*:
+    description: Quy định số lượng Home tối đa người chơi có thể sở hữu (hTeleport.home.<số>, tối đa theo home.max-homes trong config.yml). Có thể tự định nghĩa thêm permission tại home.permission-limits
+    default: false
+
+commands:
+  hteleport:
+    description: Lệnh chính của plugin hTeleport.
+    aliases: [htlp]
+  setspawn:
+    description: Đặt vị trí Spawn chính của server.
+    permission: hTeleport.admin
+  spawn:
+    description: Dịch chuyển về Spawn.
+  warp:
+    description: Quản lý và dịch chuyển đến các điểm Warp.
+    usage: /warp <name|create|delete|setperm|delperm|list> [args]
+  back:
+    description: Dịch chuyển về vị trí vừa chết.
+    permission: hTeleport.back
+  tpa:
+    description: Gửi yêu cầu dịch chuyển tới người chơi khác.
+    permission: hTeleport.tpa
+  tphere:
+    description: Yêu cầu người chơi khác dịch chuyển tới vị trí của bạn.
+    permission: hTeleport.tphere
+  tpall:
+    description: Dịch chuyển toàn bộ người chơi online tới vị trí của bạn.
+    permission: hTeleport.tpall
+  tpaccept:
+    description: Chấp nhận yêu cầu dịch chuyển.
+    permission: hTeleport.tpaccept
+  tpdeny:
+    description: Từ chối yêu cầu dịch chuyển.
+    permission: hTeleport.tpdeny
+  tpcancel:
+    description: Hủy yêu cầu dịch chuyển đang chờ.
+    permission: hTeleport.tpcancel
+  home:
+    description: Mở menu GUI hoặc dịch chuyển về Home.
+    aliases: [htlp:home]
+  sethome:
+    description: Thiết lập vị trí Home.
+    usage: /sethome <id>
+    aliases: [htlp:sethome]
+  delhome:
+    description: Xóa vị trí Home.
+    usage: /delhome <id>
+    aliases: [htlp:delhome]
+  homes:
+    description: Xem danh sách các Home của bạn.
+    aliases: [htlp:homes]
+  rtp:
+    description: Dịch chuyển ngẫu nhiên đến một vị trí an toàn.
+    usage: /rtp [world]
+    aliases: [ randomtp, wild ]

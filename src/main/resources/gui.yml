@@ -1,0 +1,93 @@
+#               CẤU HÌNH GIAO DIỆN | HTELEPORT
+
+# Menu quản lí chính
+home-menu:
+  title: "&0ᴅᴀɴʜ sáᴄʜ ʜᴏᴍᴇs &8[&0%count%&8/&0%max%&8]"
+  rows: 5 # Số hàng (1 - 6)
+
+  # Danh sách slot dành cho Home (tương ứng từ Home 1 -> Home N). Tối đa 21 slot
+  home-slots:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+
+  # Các Item trang trí (Bảo đảm kín viền hoặc lấp khoảng trống)
+  fillers:
+    border:
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
+
+  # Định dạng hiển thị các loại Home
+  items:
+    home-set:
+      material: LIME_BED
+      name: "&aʜᴏᴍᴇ &f%id%"
+      lore:
+        - ""
+        - "&7ᴛʜế ɢɪớɪ: &f%world%"
+        - "&7ᴛọᴀ độ: &f%x%, %y%, %z%"
+        - ""
+        - "&a➥ &fᴄʜᴜộᴛ ᴛʀáɪ để ᴅịᴄʜ ᴄʜᴜʏểɴ"
+        - "&c➥ &fᴄʜᴜộᴛ ᴘʜảɪ để xóᴀ ʜᴏᴍᴇ"
+
+    home-empty:
+      material: GRAY_BED
+      name: "&eʜᴏᴍᴇ &f%id% &8[&eᴄʜưᴀ đặᴛ&8]"
+      lore:
+        - ""
+        - "&7sʟᴏᴛ ɴàʏ ᴄʜưᴀ ᴄó ʜᴏᴍᴇ ɴàᴏ."
+        - ""
+        - "&e➥ &fᴄʜᴜộᴛ ᴛʀáɪ để đặᴛ ʜᴏᴍᴇ ᴛạɪ ᴄʜỗ ɴàʏ."
+
+    home-locked:
+      material: RED_BED
+      name: "&cʜᴏᴍᴇ &f%id% &8[&cᴋʜóᴀ&8]"
+      lore:
+        - ""
+        - "&7ʙạɴ ᴋʜôɴɢ ᴄó ǫᴜʏềɴ sử"
+        - "&7ᴅụɴɢ sʟᴏᴛ ʜᴏᴍᴇ ɴàʏ.!"
+
+# Menu Xác Nhận Xóa Home
+confirm-menu:
+  title: "&0ʙạɴ ᴍᴜốɴ xóᴀ ʜᴏᴍᴇ %id%?"
+  rows: 3
+
+  fillers:
+    background:
+      material: BLACK_STAINED_GLASS_PANE
+      name: " "
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+
+  confirm-button:
+    slot: 11
+    material: LIME_STAINED_GLASS_PANE
+    name: "&axáᴄ ɴʜậɴ xóᴀ"
+    lore:
+      - "&7ʙấᴍ ᴠàᴏ để xóᴀ &cʜᴏᴍᴇ #%id%&7."
+      - "&7ʜàɴʜ độɴɢ &cᴋʜôɴɢ ᴛʜể ʜᴏàɴ ᴛáᴄ&7!"
+
+  cancel-button:
+    slot: 15
+    material: RED_STAINED_GLASS_PANE
+    name: "&cʜủʏ ʙỏ"
+    lore:
+      - "&7ʙấᴍ để ɢɪữ ʟạɪ ʜᴏᴍᴇ ɴàʏ."
